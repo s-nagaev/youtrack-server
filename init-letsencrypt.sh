@@ -1,12 +1,12 @@
 #!/bin/bash
 
-domains=("youtrack.swsoft.pro")
+domains=("swsoft.pro")
 email="nagaev.sv@gmail.com" # Adding a valid address is strongly recommended
-staging=1 # Set to 1 if you're testing your setup to avoid hitting request limits
+staging=0 # Set to 1 if you're testing your setup to avoid hitting request limits
 
 data_path="./certbot"
 rsa_key_size=4096
-regex="([^www.].+)"
+regex="([^youtrack.].+)"
 
 # root required
 if [ "$EUID" -ne 0 ]; then echo "Please run $0 as root." && exit; fi
