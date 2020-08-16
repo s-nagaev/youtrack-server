@@ -1,0 +1,6 @@
+certbot/conf/*
+certbot/www/*
+youtrack/backups/*
+youtrack/conf/*
+youtrack/data/*
+youtrack/logs/*
